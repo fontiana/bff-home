@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000; // Escolha a porta que desejar
+const port = 8080; // Escolha a porta que desejar
+
+console.log("iniciando aplicacao")
 
 // Middleware para lidar com JSON
 app.use(express.json());
