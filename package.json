@@ -1,0 +1,12 @@
+{
+  "name": "bff-home",
+  "version": "1.0.0",
+  "description": "Minha API Node.js com Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
