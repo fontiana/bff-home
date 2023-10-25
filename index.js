@@ -13,10 +13,11 @@ app.get('/', (req, res) => {
 });
 
 // Exemplo de rota POST para receber dados
-app.post('/api/cookie', (req, res) => {
+app.get('/api/cookie', (req, res) => {
   const data = req.body;
   // Faça algo com os dados recebidos
   console.log(data);
+  res.cookie('cokkieName', 66, { maxAge: 900000, httpOnly: true })
   res.json({ message: 'Dados recebidos com sucesso!' });
 });
 
