@@ -17,7 +17,7 @@ app.get('/api/cookie', (req, res) => {
   const data = req.body;
   // Faça algo com os dados recebidos
   console.log(data);
-  res.cookie('cokkieName', 66, { maxAge: 900000, httpOnly: true })
+  res.cookie('cokkieName', 66, { maxAge: 900000, httpOnly: true, domain: "azurewebsites.net" })
   res.json({ message: 'Dados recebidos com sucesso!' });
 });
 
