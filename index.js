@@ -24,6 +24,7 @@ app.get('/api/cookie', (req, res) => {
   res.cookie('TESTE 3', "HelloWorld!", { domain: ".azurewebsites.net", sameSite: 'strict', secure: true })
   res.cookie('TESTE 4', "HelloWorld!", { domain: ".net" })
   res.cookie('TESTE 5', "HelloWorld!", { domain: "azurewebsites.net" })
+  res.cookie('TESTE 6', "HelloWorld!", { domain: "bff-home" })
   res.json({ message: 'Dados recebidos com sucesso!' });
 });
 
