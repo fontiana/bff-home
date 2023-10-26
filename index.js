@@ -19,7 +19,8 @@ app.get('/api/cookie', (req, res) => {
   const data = req.body;
   // Faça algo com os dados recebidos
   console.log(data);
-  res.cookie('TESTE', "Hello World!", { httpOnly: true, domain: "azurewebsites.net", sameSite: 'strict', secure: true })
+  res.cookie('TESTE', "HelloWorld!", { domain: "azurewebsites.net", sameSite: 'strict', secure: true })
+  res.cookie('TESTE_2', "HelloWorld!")
   res.json({ message: 'Dados recebidos com sucesso!' });
 });
 
